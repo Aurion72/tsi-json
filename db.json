@@ -1,11 +1,3257 @@
 {
-  "posts": [
+  "statistics": [
     {
-      "id": 1,
-      "title": "hello"
+      "Chiffre d'affaire": 260000,
+      "Marge": 50213,
+      "date": "Janvier"
+    },
+    {
+      "Chiffre d'affaire": 215632,
+      "Marge": 50213,
+      "date": "Février"
+    },
+    {
+      "Chiffre d'affaire": 231000,
+      "Marge": 50213,
+      "date": "Mars"
+    },
+    {
+      "Chiffre d'affaire": 187000,
+      "Marge": 50213,
+      "date": "Avril"
+    },
+    {
+      "Chiffre d'affaire": 156000,
+      "Marge": 50213,
+      "date": "Mai"
+    },
+    {
+      "Chiffre d'affaire": 147082,
+      "Marge": 50213,
+      "date": "Juin"
+    },
+    {
+      "Chiffre d'affaire": 189000,
+      "Marge": 50213,
+      "date": "Juillet"
+    },
+    {
+      "Chiffre d'affaire": 178902,
+      "Marge": 50213,
+      "date": "Août"
+    },
+    {
+      "Chiffre d'affaire": 127896,
+      "Marge": 50213,
+      "date": "Septembre"
+    },
+    {
+      "Chiffre d'affaire": 189620,
+      "Marge": 50213,
+      "date": "Octobre"
+    },
+    {
+      "Chiffre d'affaire": 136450,
+      "Marge": 50213,
+      "date": "Novembre"
+    },
+    {
+      "Chiffre d'affaire": 124567,
+      "Marge": 50213,
+      "date": "Décembre"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+  "notifications": [
+    {
+      "id": 1,
+      "created_at": "2019-11-08 16:00:12",
+      "text": "Test de notification",
+      "unread": true
+    },
+    {
+      "id": 2,
+      "created_at": "2019-11-08 16:00:12",
+      "text": "Test de notification 2",
+      "unread": true
+    },
+    {
+      "id": 3,
+      "created_at": "2019-11-08 16:00:12",
+      "text": "Test de notification 3",
+      "unread": true
+    },
+    {
+      "id": 4,
+      "created_at": "2019-11-06 21:32:12",
+      "text": "Test de notification 4",
+      "unread": false
+    }
+  ],
+  "order-errors": [
+    {
+      "id": 1,
+      "sales_rep": {
+        "id": 2,
+        "firstname": "Commercial",
+        "lastname": "Commercial"
+      },
+      "ordered": 254,
+      "prepared": 268,
+      "product": {
+        "id": 2,
+        "name": "Nom du produit"
+      },
+      "order": {
+        "id": 2
+      },
+      "order_type": {
+        "id": 1,
+        "slug": "commande"
+      },
+      "date": "2019-11-06 21:32:12",
+      "client": {
+        "id": 1,
+        "name": "Nom de la société cliente 1"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "created_at": "2019-12-31T13:01:01.110Z",
+      "adjustment": true,
+      "client": {
+        "id": 2,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 1,
+          "name_fr": "dzdz",
+          "name_en": "Pays en"
+        },
+        "name": "Nom de la société cliente 2",
+        "firstname": "Client 2",
+        "lastname": "Client 2",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 12 12 12",
+        "mobile": "06 54 12 12 12",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "french"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 1,
+        "name_fr": "En préparation",
+        "name_en": "En préparation",
+        "color": "#fcf06a"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.315055195526293,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 8,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          },
+          "prepared": 1800
+        },
+        {
+          "id": 0.9922345484431019,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        },
+        {
+          "id": 0.8971039035387722,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 8640,
+      "total_ttc": 51840,
+      "total_ht": 43200,
+      "sales_rep_comments": "<p>dzd</p>",
+      "manager_comments": "<p>zdzdz</p>",
+      "id": 1
+    },
+    {
+      "created_at": "2019-12-31T13:22:46.581Z",
+      "adjustment": false,
+      "client": {
+        "id": 1,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 2,
+          "name_fr": "Pays 2",
+          "name_en": "Pays 2"
+        },
+        "name": "Nom de la société cliente 1",
+        "firstname": "Client",
+        "lastname": "Client",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 56 45 56",
+        "mobile": "06 54 26 65 45",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "Français"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 3,
+        "name_fr": "Livré",
+        "name_en": "Livré",
+        "color": "#abff93"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.35511767412756723,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 10,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 7200,
+      "total_ht": 36000,
+      "total_ttc": 43200,
+      "sales_rep_comments": "<p>dzadza</p>",
+      "manager_comments": "<p>dazdaz</p>",
+      "id": 2
+    },
+    {
+      "created_at": "2020-01-03T16:29:43.052Z",
+      "adjustment": false,
+      "client": {
+        "id": 1,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 2,
+          "name_fr": "Pays 2",
+          "name_en": "Pays 2"
+        },
+        "name": "Nom de la société cliente 1",
+        "firstname": "Client",
+        "lastname": "Client",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 56 45 56",
+        "mobile": "06 54 26 65 45",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "Français"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 3,
+        "name_fr": "Livré",
+        "name_en": "Livré",
+        "color": "#abff93"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.35511767412756723,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 10,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 7200,
+      "total_ht": 36000,
+      "total_ttc": 43200,
+      "sales_rep_comments": "<p>dzadza</p>",
+      "manager_comments": "<p>dazdaz</p>",
+      "id": 4
+    },
+    {
+      "created_at": "2020-01-03T16:38:11.957Z",
+      "adjustment": true,
+      "client": {
+        "id": 2,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 1,
+          "name_fr": "dzdz",
+          "name_en": "Pays en"
+        },
+        "name": "Nom de la société cliente 2",
+        "firstname": "Client 2",
+        "lastname": "Client 2",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 12 12 12",
+        "mobile": "06 54 12 12 12",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "french"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 1,
+        "name_fr": "En préparation",
+        "name_en": "En préparation",
+        "color": "#fcf06a"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.315055195526293,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 8,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          },
+          "prepared": 1800
+        },
+        {
+          "id": 0.9922345484431019,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        },
+        {
+          "id": 0.8971039035387722,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 8640,
+      "total_ttc": 51840,
+      "total_ht": 43200,
+      "sales_rep_comments": "<p>dzd</p>",
+      "manager_comments": "<p>zdzdz</p>",
+      "id": 5
+    },
+    {
+      "created_at": "2020-01-03T16:38:33.696Z",
+      "adjustment": true,
+      "client": {
+        "id": 2,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 1,
+          "name_fr": "dzdz",
+          "name_en": "Pays en"
+        },
+        "name": "Nom de la société cliente 2",
+        "firstname": "Client 2",
+        "lastname": "Client 2",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 12 12 12",
+        "mobile": "06 54 12 12 12",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "french"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 1,
+        "name_fr": "En préparation",
+        "name_en": "En préparation",
+        "color": "#fcf06a"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.315055195526293,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 8,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          },
+          "prepared": 1800
+        },
+        {
+          "id": 0.9922345484431019,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        },
+        {
+          "id": 0.8971039035387722,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 8640,
+      "total_ttc": 51840,
+      "total_ht": 43200,
+      "sales_rep_comments": "<p>dzd</p>",
+      "manager_comments": "<p>zdzdz</p>",
+      "id": 6
+    },
+    {
+      "created_at": "2020-01-03T16:39:26.187Z",
+      "adjustment": true,
+      "client": {
+        "id": 2,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 1,
+          "name_fr": "dzdz",
+          "name_en": "Pays en"
+        },
+        "name": "Nom de la société cliente 2",
+        "firstname": "Client 2",
+        "lastname": "Client 2",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 12 12 12",
+        "mobile": "06 54 12 12 12",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "french"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 1,
+        "name_fr": "En préparation",
+        "name_en": "En préparation",
+        "color": "#fcf06a"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.315055195526293,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 8,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          },
+          "prepared": 1800
+        },
+        {
+          "id": 0.9922345484431019,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        },
+        {
+          "id": 0.8971039035387722,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 8640,
+      "total_ttc": 51840,
+      "total_ht": 43200,
+      "sales_rep_comments": "<p>dzd</p>",
+      "manager_comments": "<p>zdzdz</p>",
+      "id": 7
+    },
+    {
+      "created_at": "2020-01-03T16:39:41.743Z",
+      "adjustment": true,
+      "client": {
+        "id": 2,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 1,
+          "name_fr": "dzdz",
+          "name_en": "Pays en"
+        },
+        "name": "Nom de la société cliente 2",
+        "firstname": "Client 2",
+        "lastname": "Client 2",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 12 12 12",
+        "mobile": "06 54 12 12 12",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "french"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "type": {
+        "id": 1,
+        "slug": "commande",
+        "name": "Bon de commande",
+        "plural_name": "Bons de commande"
+      },
+      "status": {
+        "id": 1,
+        "name_fr": "En préparation",
+        "name_en": "En préparation",
+        "color": "#fcf06a"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "is_active": true
+      },
+      "products": [
+        {
+          "id": 0.315055195526293,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 8,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "total_ht": 28800,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          },
+          "prepared": 1800
+        },
+        {
+          "id": 0.9922345484431019,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        },
+        {
+          "id": 0.8971039035387722,
+          "product": {
+            "id": 1,
+            "name": "Produit 1",
+            "description_fr": "test",
+            "description_en": "test",
+            "batches_quantity": 12,
+            "pieces_per_batch": 200,
+            "buy_price_one_piece": 12,
+            "sell_price_one_piece": 18,
+            "brand": {
+              "id": 1,
+              "name": "Marque 1"
+            },
+            "provider": {
+              "id": 1,
+              "name": "Fournisseur 1"
+            },
+            "category": {
+              "id": 1,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 1,
+                "slug": "rubrique",
+                "name": "Rubrique",
+                "plural_name": "Rubriques"
+              }
+            },
+            "sub_category": {
+              "id": 2,
+              "name_fr": "Catégorie 1",
+              "name_en": "Catégorie 1",
+              "type": {
+                "id": 2,
+                "slug": "sous-rubrique",
+                "name": "Sous-rubrique",
+                "plural_name": "Sous-rubriques"
+              }
+            },
+            "buyer": {
+              "id": 1,
+              "name": "Acheteur 1"
+            }
+          },
+          "batches_quantity_selected": 2,
+          "pieces_per_batch": 200,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "tva": 8640,
+      "total_ttc": 51840,
+      "total_ht": 43200,
+      "sales_rep_comments": "<p>dzd</p>",
+      "manager_comments": "<p>zdzdz</p>",
+      "id": 8
+    },
+    {
+      "products": [
+        {
+          "id": 0.6238456295746284,
+          "product": null,
+          "batches_quantity_selected": "",
+          "pieces_per_batch": "",
+          "sell_price_one_piece": "",
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "point_of_sale": {
+            "name": {
+              "id": 1,
+              "name": "Point de vente 1",
+              "client": {
+                "id": 1,
+                "sales_rep": {
+                  "id": 2,
+                  "firstname": "Commercial",
+                  "lastname": "Commercialname"
+                },
+                "country": {
+                  "id": 2,
+                  "name_fr": "Pays 2",
+                  "name_en": "Pays 2"
+                },
+                "name": "Nom de la société cliente 1",
+                "firstname": "Client",
+                "lastname": "Client",
+                "email": "client@tsi.test",
+                "address": "8 rue de la Presche",
+                "postal_code": "72000",
+                "city": "Le Mans",
+                "phone": "02 45 56 45 56",
+                "mobile": "06 54 26 65 45",
+                "vat_number": "FR 40 123456824",
+                "description": "description",
+                "language": {
+                  "id": 1,
+                  "name": "Français"
+                },
+                "vat_liable": true,
+                "informations": "informations"
+              },
+              "country": {
+                "id": 2,
+                "name_fr": "Pays 2",
+                "name_en": "Pays 2"
+              },
+              "vat_number": "FR 40 123456824",
+              "address": "37 rue de la Presche",
+              "postal_code": "72000",
+              "city": "Le Mans",
+              "phone": "0245564556"
+            }
+          }
+        }
+      ],
+      "type": {
+        "id": 2,
+        "slug": "reservation",
+        "name": "Bon de réservation",
+        "plural_name": "Bons de réservation"
+      },
+      "total_ht": 0,
+      "tva": 0,
+      "total_ttc": 0,
+      "client": {
+        "id": 1,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 2,
+          "name_fr": "Pays 2",
+          "name_en": "Pays 2"
+        },
+        "name": "Nom de la société cliente 1",
+        "firstname": "Client",
+        "lastname": "Client",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 56 45 56",
+        "mobile": "06 54 26 65 45",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "Français"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "password": "secret",
+        "is_active": true
+      },
+      "sales_rep_comments": "<p>dzadaz</p>",
+      "manager_comments": "<p>dazdaz</p>",
+      "id": 9
+    }
+  ],
+  "mail-templates": [
+    {
+      "id": 1,
+      "type": "Création compte  (Administrateur / Commercial / Gestionnaire)",
+      "title_fr": "dazdaz",
+      "title_en": "azdaz",
+      "description_fr": "<p>bazdaz</p>",
+      "description_en": "<p>bdazdazd</p>"
+    },
+    {
+      "id": 2,
+      "type": "Création compte  (Administrateur / Commercial / Gestionnaire)",
+      "title_fr": "test",
+      "title_en": "mail 2",
+      "description_fr": "<p>mail 2</p>",
+      "description_en": "<p>mail 2</p>"
+    }
+  ],
+  "mail-sent": [
+    {
+      "id": 1,
+      "title": "Création compte Administrateur",
+      "sent_to": "tony.fresneau@gmail.com",
+      "sent_at": "2019-11-06 21:32:1",
+      "body": "Corps de l'email envoyé"
+    }
+  ],
+  "newsletters": [
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2019-11-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 47
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2019-11-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 48
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2019-11-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 50
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2019-11-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 52
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2018-12-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [
+        {
+          "id": 1,
+          "name": "Marque 1"
+        },
+        {
+          "id": 2,
+          "name": "Marque 2"
+        }
+      ],
+      "products": [],
+      "all_brands": false,
+      "all_products": true,
+      "id": 53
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2018-12-20T20:30",
+      "title_en": "dzd",
+      "sales_rep": {
+        "id": 5,
+        "type": "2",
+        "firstname": "Commercial 2",
+        "lastname": "Commercial 2",
+        "email": "commercial2@tsi.test"
+      },
+      "description_fr": "<p>zdzd</p>",
+      "description_en": "<p>zdz</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 54
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2201-01-21T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>dd</p>",
+      "description_en": "<p>ddd</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 55
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2018-01-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 57
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2018-03-20T20:30",
+      "title_en": "d",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 58
+    },
+    {
+      "sent_at": "",
+      "title_fr": "Nouvelle newsletter",
+      "to_be_send_at": "2018-03-20T20:30",
+      "title_en": "dzdz",
+      "sales_rep": {
+        "id": 2,
+        "type": "2",
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test"
+      },
+      "description_fr": "<p>zdzd</p>",
+      "description_en": "<p>zdz</p>",
+      "brands": [],
+      "products": [],
+      "all_brands": true,
+      "all_products": true,
+      "id": 59
+    },
+    {
+      "title_fr": "d",
+      "title_en": "d",
+      "description_fr": "<p>d</p>",
+      "description_en": "<p>d</p>",
+      "sales_rep": {
+        "id": 2,
+        "type": {
+          "id": 2,
+          "name": "Commercial"
+        },
+        "firstname": "Commercial",
+        "lastname": "Commercial",
+        "email": "commercial@tsi.test",
+        "password": "secret",
+        "is_active": true
+      },
+      "brands": [
+        {
+          "id": 1,
+          "name": "Marque 1"
+        },
+        {
+          "id": 3,
+          "name": "Marque 3"
+        },
+        {
+          "id": 4,
+          "name": "Marque 4"
+        }
+      ],
+      "products": [
+        {
+          "id": 1,
+          "name": "Produit 1",
+          "description_fr": "test",
+          "description_en": "test",
+          "batches_in_stock": 2,
+          "batches_quantity": 12,
+          "pieces_per_batch": 200,
+          "pieces_in_stock": 0,
+          "pieces_purchased": 1200,
+          "pieces_sold": 1200,
+          "buy_price_one_piece": 12,
+          "sell_price_one_piece": 18,
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "provider": {
+            "id": 1,
+            "name": "Fournisseur 1"
+          },
+          "category": {
+            "id": 1,
+            "name_fr": "Catégorie 1",
+            "name_en": "Catégorie 1",
+            "type": {
+              "id": 1,
+              "slug": "rubrique",
+              "name": "Rubrique",
+              "plural_name": "Rubriques"
+            }
+          },
+          "sub_category": {
+            "id": 2,
+            "name_fr": "Catégorie 1",
+            "name_en": "Catégorie 1",
+            "type": {
+              "id": 2,
+              "slug": "sous-rubrique",
+              "name": "Sous-rubrique",
+              "plural_name": "Sous-rubriques"
+            }
+          },
+          "buyer": {
+            "id": 1,
+            "name": "Acheteur 1"
+          }
+        },
+        {
+          "name": "Sous-catégorie 1 Catégorie 1 Marque 1 02012020",
+          "brand": {
+            "id": 1,
+            "name": "Marque 1"
+          },
+          "category": {
+            "id": 1,
+            "name_fr": "Catégorie 1",
+            "name_en": "Catégorie 1",
+            "type": {
+              "id": 1,
+              "slug": "rubrique",
+              "name": "Rubrique",
+              "plural_name": "Rubriques"
+            }
+          },
+          "sub_category": {
+            "id": 2,
+            "name_fr": "Sous-catégorie 1",
+            "name_en": "Sous-catégorie 1",
+            "type": {
+              "id": 2,
+              "slug": "sous-rubrique",
+              "name": "Sous-rubrique",
+              "plural_name": "Sous-rubriques"
+            }
+          },
+          "batches_quantity": "10",
+          "buyer": {
+            "id": 1,
+            "name": "Fresneau Tony",
+            "description": "Text"
+          },
+          "provider": {
+            "id": 1,
+            "name": "Fournisseur 1",
+            "description": "Text"
+          },
+          "batches_in_stock": "",
+          "pieces_per_batch": 10,
+          "pieces_in_stock": 0,
+          "pieces_purchased": "",
+          "pieces_sold": "",
+          "buy_price_one_piece": 10,
+          "sell_price_one_piece": 20,
+          "description_fr": "adazdaz",
+          "description_en": "azdazdazdazdazdaz",
+          "id": 4
+        }
+      ],
+      "to_be_send_at": "2020-01-17T20:30",
+      "id": 60
+    }
+  ],
+  "user-types": [
+    {
+      "id": 1,
+      "slug": "administrateur",
+      "name": "Administrateur",
+      "plural_name": "Administrateurs"
+    },
+    {
+      "id": 2,
+      "slug": "commercial",
+      "name": "Commercial",
+      "plural_name": "Commerciaux"
+    },
+    {
+      "id": 3,
+      "slug": "gestionnaire",
+      "name": "Gestionnaire",
+      "plural_name": "Gestionnaires"
+    },
+    {
+      "id": 4,
+      "slug": "secretaire",
+      "name": "Secrétaire",
+      "plural_name": "Secrétaires"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "type": {
+        "id": 1,
+        "name": "Administrateur"
+      },
+      "firstname": "Admin",
+      "lastname": "Admin22",
+      "email": "Admin@tsi.test",
+      "password": "secret",
+      "is_active": false
+    },
+    {
+      "id": 2,
+      "type": {
+        "id": 2,
+        "name": "Commercial"
+      },
+      "firstname": "Commercial",
+      "lastname": "Commercial",
+      "email": "commercial@tsi.test",
+      "password": "secret",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "type": {
+        "id": 3,
+        "name": "Gestionnaire"
+      },
+      "firstname": "Gestionnaire",
+      "lastname": "Gestionnaire",
+      "email": "gestionnaire@tsi.test",
+      "password": "secret",
+      "is_active": true
+    },
+    {
+      "id": 4,
+      "type": {
+        "id": 4,
+        "name": "Secrétaire"
+      },
+      "firstname": "Secrétaires",
+      "lastname": "Secrétaires",
+      "email": "secretaire@tsi.test",
+      "password": "secret",
+      "is_active": true
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "sales_rep": {
+        "id": 2,
+        "firstname": "Commercial",
+        "lastname": "Commercialname"
+      },
+      "country": {
+        "id": 2,
+        "name_fr": "Pays 2",
+        "name_en": "Pays 2"
+      },
+      "name": "Nom de la société cliente 1",
+      "firstname": "Client",
+      "lastname": "Client",
+      "email": "client@tsi.test",
+      "address": "8 rue de la Presche",
+      "postal_code": "72000",
+      "city": "Le Mans",
+      "phone": "02 45 56 45 56",
+      "mobile": "06 54 26 65 45",
+      "vat_number": "FR 40 123456824",
+      "description": "description",
+      "language": {
+        "id": 1,
+        "name": "Français"
+      },
+      "vat_liable": true,
+      "informations": "informations"
+    },
+    {
+      "id": 2,
+      "sales_rep": {
+        "id": 2,
+        "firstname": "Commercial",
+        "lastname": "Commercialname"
+      },
+      "country": {
+        "id": 1,
+        "name_fr": "dzdz",
+        "name_en": "Pays en"
+      },
+      "name": "Nom de la société cliente 2",
+      "firstname": "Client 2",
+      "lastname": "Client 2",
+      "email": "client@tsi.test",
+      "address": "8 rue de la Presche",
+      "postal_code": "72000",
+      "city": "Le Mans",
+      "phone": "02 45 12 12 12",
+      "mobile": "06 54 12 12 12",
+      "vat_number": "FR 40 123456824",
+      "description": "description",
+      "language": {
+        "id": 1,
+        "name": "french"
+      },
+      "vat_liable": true,
+      "informations": "informations"
+    }
+  ],
+  "languages": [
+    {
+      "id": 1,
+      "name": "Français"
+    },
+    {
+      "id": 2,
+      "name": "Anglais"
+    }
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Marque 1"
+    },
+    {
+      "id": 2,
+      "name": "Marque 2"
+    },
+    {
+      "id": 3,
+      "name": "Marque 3"
+    },
+    {
+      "id": 4,
+      "name": "Marque 4"
+    },
+    {
+      "id": 5,
+      "name": "Marque 5"
+    }
+  ],
+  "order-types": [
+    {
+      "id": 1,
+      "slug": "commande",
+      "name": "Bon de commande",
+      "plural_name": "Bons de commande"
+    },
+    {
+      "id": 2,
+      "slug": "reservation",
+      "name": "Bon de réservation",
+      "plural_name": "Bons de réservation"
+    }
+  ],
+  "order-status": [
+    {
+      "id": 1,
+      "name_fr": "En préparation",
+      "name_en": "En préparation",
+      "color": "#fcf06a"
+    },
+    {
+      "id": 2,
+      "name_fr": "Prêt à être livré",
+      "name_en": "Prêt à être livré",
+      "color": "#ffaf6e"
+    },
+    {
+      "id": 3,
+      "name_fr": "Livré",
+      "name_en": "Livré",
+      "color": "#abff93"
+    },
+    {
+      "id": 4,
+      "name_fr": "Annulée",
+      "name_en": "Annulée",
+      "color": "#fdacac"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Produit 1",
+      "description_fr": "test",
+      "description_en": "test",
+      "batches_in_stock": 2,
+      "batches_quantity": 12,
+      "pieces_per_batch": 200,
+      "pieces_in_stock": 0,
+      "pieces_purchased": 1200,
+      "pieces_sold": 1200,
+      "buy_price_one_piece": 12,
+      "sell_price_one_piece": 18,
+      "brand": {
+        "id": 1,
+        "name": "Marque 1"
+      },
+      "provider": {
+        "id": 1,
+        "name": "Fournisseur 1"
+      },
+      "category": {
+        "id": 1,
+        "name_fr": "Catégorie 1",
+        "name_en": "Catégorie 1",
+        "type": {
+          "id": 1,
+          "slug": "rubrique",
+          "name": "Rubrique",
+          "plural_name": "Rubriques"
+        }
+      },
+      "sub_category": {
+        "id": 2,
+        "name_fr": "Catégorie 1",
+        "name_en": "Catégorie 1",
+        "type": {
+          "id": 2,
+          "slug": "sous-rubrique",
+          "name": "Sous-rubrique",
+          "plural_name": "Sous-rubriques"
+        }
+      },
+      "buyer": {
+        "id": 1,
+        "name": "Acheteur 1"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Produit 2",
+      "description_fr": "test",
+      "description_en": "test",
+      "batches_quantity": 12,
+      "batches_in_stock": 2,
+      "pieces_per_batch": 200,
+      "pieces_in_stock": 400,
+      "pieces_purchased": 1200,
+      "pieces_sold": 1200,
+      "buy_price_one_piece": 12,
+      "sell_price_one_piece": 18,
+      "brand": {
+        "id": 1,
+        "name": "Marque 1"
+      },
+      "provider": {
+        "id": 1,
+        "name": "Fournisseur 1"
+      },
+      "category": {
+        "id": 1,
+        "name_fr": "Catégorie 1",
+        "name_en": "Catégorie 1",
+        "type": {
+          "id": 1,
+          "slug": "rubrique",
+          "name": "Rubrique",
+          "plural_name": "Rubriques"
+        }
+      },
+      "sub_category": {
+        "id": 2,
+        "name_fr": "Catégorie 1",
+        "name_en": "Catégorie 1",
+        "type": {
+          "id": 2,
+          "slug": "sous-rubrique",
+          "name": "Sous-rubrique",
+          "plural_name": "Sous-rubriques"
+        }
+      },
+      "buyer": {
+        "id": 1,
+        "name": "Acheteur 1"
+      }
+    },
+    {
+      "name": "Sous-catégorie 1 Catégorie 1 Marque 1 02012020",
+      "brand": {
+        "id": 1,
+        "name": "Marque 1"
+      },
+      "category": {
+        "id": 1,
+        "name_fr": "Catégorie 1",
+        "name_en": "Catégorie 1",
+        "type": {
+          "id": 1,
+          "slug": "rubrique",
+          "name": "Rubrique",
+          "plural_name": "Rubriques"
+        }
+      },
+      "sub_category": {
+        "id": 2,
+        "name_fr": "Sous-catégorie 1",
+        "name_en": "Sous-catégorie 1",
+        "type": {
+          "id": 2,
+          "slug": "sous-rubrique",
+          "name": "Sous-rubrique",
+          "plural_name": "Sous-rubriques"
+        }
+      },
+      "batches_quantity": "10",
+      "buyer": {
+        "id": 1,
+        "name": "Fresneau Tony",
+        "description": "Text"
+      },
+      "provider": {
+        "id": 1,
+        "name": "Fournisseur 1",
+        "description": "Text"
+      },
+      "batches_in_stock": "",
+      "pieces_per_batch": 10,
+      "pieces_in_stock": 0,
+      "pieces_purchased": "",
+      "pieces_sold": "",
+      "buy_price_one_piece": 10,
+      "sell_price_one_piece": 20,
+      "description_fr": "adazdaz",
+      "description_en": "azdazdazdazdazdaz",
+      "id": 4
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name_fr": "dzdz",
+      "name_en": "Pays en"
+    },
+    {
+      "id": 2,
+      "name_fr": "Pays 2",
+      "name_en": "Pays 2"
+    },
+    {
+      "name_fr": "dazdaz",
+      "name_en": "dazdaz",
+      "id": 3
+    }
+  ],
+  "points-of-sale": [
+    {
+      "id": 1,
+      "name": "Point de vente 1",
+      "client": {
+        "id": 1,
+        "sales_rep": {
+          "id": 2,
+          "firstname": "Commercial",
+          "lastname": "Commercialname"
+        },
+        "country": {
+          "id": 2,
+          "name_fr": "Pays 2",
+          "name_en": "Pays 2"
+        },
+        "name": "Nom de la société cliente 1",
+        "firstname": "Client",
+        "lastname": "Client",
+        "email": "client@tsi.test",
+        "address": "8 rue de la Presche",
+        "postal_code": "72000",
+        "city": "Le Mans",
+        "phone": "02 45 56 45 56",
+        "mobile": "06 54 26 65 45",
+        "vat_number": "FR 40 123456824",
+        "description": "description",
+        "language": {
+          "id": 1,
+          "name": "Français"
+        },
+        "vat_liable": true,
+        "informations": "informations"
+      },
+      "country": {
+        "id": 2,
+        "name_fr": "Pays 2",
+        "name_en": "Pays 2"
+      },
+      "vat_number": "FR 40 123456824",
+      "address": "37 rue de la Presche",
+      "postal_code": "72000",
+      "city": "Le Mans",
+      "phone": "0245564556"
+    }
+  ],
+  "category-types": [
+    {
+      "id": 1,
+      "slug": "rubrique",
+      "name": "Rubrique",
+      "plural_name": "Rubriques"
+    },
+    {
+      "id": 2,
+      "slug": "sous-rubrique",
+      "name": "Sous-rubrique",
+      "plural_name": "Sous-rubriques"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name_fr": "Catégorie 1",
+      "name_en": "Catégorie 1",
+      "type": {
+        "id": 1,
+        "slug": "rubrique",
+        "name": "Rubrique",
+        "plural_name": "Rubriques"
+      }
+    },
+    {
+      "id": 2,
+      "name_fr": "Sous-catégorie 1",
+      "name_en": "Sous-catégorie 1",
+      "type": {
+        "id": 2,
+        "slug": "sous-rubrique",
+        "name": "Sous-rubrique",
+        "plural_name": "Sous-rubriques"
+      }
+    }
+  ],
+  "buyers": [
+    {
+      "id": 1,
+      "name": "Fresneau Tony",
+      "description": "Text"
+    },
+    {
+      "id": 2,
+      "name": "Fresneau Tony",
+      "description": "Text"
+    }
+  ],
+  "providers": [
+    {
+      "id": 1,
+      "name": "Fournisseur 1",
+      "description": "Text"
+    },
+    {
+      "id": 2,
+      "name": "Fournisseur 2dzadaz",
+      "description": "Textdazdazdaz"
+    }
+  ]
 }
